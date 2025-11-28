@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const QuizPage = ({quizes,onFinish,onScore,score}) => {
+const QuizPage = ({quizes,onFinish,onScore,score,category}) => {
   const [current,setCurrent] = useState(0);
   const handleClick =(idx)=>{
     //정답체크
@@ -17,9 +17,9 @@ const QuizPage = ({quizes,onFinish,onScore,score}) => {
   return (
     <div id="quiz-page">
       <div className="cotainer-part">
-        <p>PART 1. 고전명작</p>
+        <p className="part-title">PART 1. 고전명작</p>
       </div>
-      <p>QUIZ 1</p>
+      <p>QUIZ {current+1}</p>
       <p>{quizes[current].question}</p>
       <ul className="choices">
         {
