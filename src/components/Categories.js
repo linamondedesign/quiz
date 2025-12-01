@@ -1,5 +1,6 @@
 const Categories = ({categories,onSelect}) => {
   const arr=['red', 'green', 'purple', 'blue'];
+  const url = process.env.PUBLIC_URL;
   return (
     <div id="categories">
       <h1 className="h1class">도서 스페셜 퀴즈</h1>
@@ -13,7 +14,7 @@ const Categories = ({categories,onSelect}) => {
            <li key={idx}
                onClick={()=>{onSelect(item)}}
            >
-            <img src={`/images/img0${idx+1}_${arr[idx]}.png`} className="shape shape1" alt="shape1" />
+            <img src={`${url}/images/img0${idx+1}_${arr[idx]}.png`} className="shape shape1" alt="shape1" />
             <p>{item}</p>
             </li>
           ) 

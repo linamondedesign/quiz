@@ -1,4 +1,5 @@
 const Results = ({ onReStart, score }) => {
+  const url = process.env.PUBLIC_URL;
   return (
     <div id="result">
       <h1 className="h1class">도서 스페셜 퀴즈</h1>
@@ -6,7 +7,7 @@ const Results = ({ onReStart, score }) => {
       <p className="pclose1">퀴즈 종료</p>
       <div className="img-wrap">
         <img
-          src={`/images/img01_red.png`}
+          src={`${url}/images/img01_red.png`}
           className="shape shape2"
           alt="shape1"
         />
