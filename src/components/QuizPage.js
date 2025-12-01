@@ -15,7 +15,7 @@ const QuizPage = ({quizes,onFinish,onScore,score,category}) => {
     }
   }
 /*4가지 테마 색상*/
- const themeColors = ['#FF6B6B', '#4D96FF', '#6BCB77', '#9D4EDD'];
+ const themeColors = ['#F2644D', '#22B299', '#7893D4', '#3CADDE'];
 
   return (
     <div id="quiz-page">
