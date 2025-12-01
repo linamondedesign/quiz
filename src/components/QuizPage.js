@@ -14,10 +14,13 @@ const QuizPage = ({quizes,onFinish,onScore,score,category}) => {
       onFinish(true);
     }
   }
+/*4가지 테마 색상*/
+ const themeColors = ['#FF6B6B', '#4D96FF', '#6BCB77', '#9D4EDD'];
+
   return (
     <div id="quiz-page">
       <div className="cotainer-part">
-        <p className="part-title">PART 1. 고전명작</p>
+        <p className="part-title">PART {category}</p>
       </div>
       <p>QUIZ {current+1}</p>
       <p>{quizes[current].question}</p>
@@ -26,7 +29,9 @@ const QuizPage = ({quizes,onFinish,onScore,score,category}) => {
         quizes[current].choices.map((item,idx)=>{
           return (
             <li key={idx}
-               onClick={()=>{handleClick(idx)}}>{idx+1}.{item}</li>
+               onClick={()=>{handleClick(idx)}}
+               style={{ backgroundColor: themeColors[idx % themeColors.length] }}
+               >{idx+1}.{item}</li>
           )
         })
         }

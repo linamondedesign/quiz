@@ -42,7 +42,7 @@ const App = () => {
                      onFinish={setFinish}
                      onScore={handleScore}
                      score={score}
-                     cotegory={category}
+                     category={category}
                      />
        }
        {/* <p>APP SCORE:{score}</p> */}
