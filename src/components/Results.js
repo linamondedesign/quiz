@@ -5,6 +5,11 @@ const Results = ({ onReStart, score }) => {
       <h1 className="h1class">도서 스페셜 퀴즈</h1>
       <p className="pclass">BOOK SPECIAL QUIZ</p>
       <p className="pclose1">퀴즈 종료</p>
+      
+      
+
+      
+      
       <div className="img-wrap">
         <img
           src={`${url}/images/img01_red.png`}
